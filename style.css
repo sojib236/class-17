@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 80%;
+    margin: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* header section css start */
+header {
+    background: black;
+    padding: 15px 0;
+}
+
+.header-logo {
+    width: 30%;
+    float: left;
+}
+
+.header-logo img {
+    width: 114px;
+}
+
+.header-menu {
+    width: 70%;
+}
+
+.header-menu ul li {
+    display: inline-block;
+}
+
+.header-menu ul li a {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+    line-height: 69px;
+}
+.agel-down {
+    position: relative;
+    top: 2px;
+}
+
+/* hover */
+.header-menu ul li a:hover{
+    text-decoration: underline;
+}
+/* Drop Down menu */
+.header-menu ul li{
+    position: relative;
+}
+.header-menu ul li ul{
+    position: absolute;
+    top: 91px;
+    left: 0;
+    width: 250px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .6s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.header-menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transition: .6s;
+    transform: scaleY(1);
+
+}
+.header-menu ul li ul li{
+    display: block;
+    padding: 20px 0;
+    border-bottom: 2px solid;
+    transition: .6s;
+}
+.header-menu ul li ul li:first-child{
+    border-top: 2px solid;
+}
+.header-menu ul li ul a{
+    display: block;
+
+}
+/* hover */
+.header-menu ul li ul li:hover{
+    background-color: white;
+    color: black;
+}
+
+/* header section css end */
+
+
+/* banner */
+.banner-section{
+    background-image: url(https://i.ibb.co/NTQyJzN/a0c6042d4612d7adf44692fffac7e082.jpg);
+    padding: 330px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner h2 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.banner p {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+button.left-btn {
+    padding: 15px 33px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    font-weight: 900;
+    border: none;
+    transition: .6s;
+}
+button.left-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+button.right-btn {
+    padding: 15px 33px;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    font-weight: 900;
+    border: none;
+    margin-left: 14px;
+    transition: .6s;
+}
+button.right-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+/* about section */
+.about-left{
+    width: 60%;
+}
+.about-right{
+    width: 40%;
+}
+.about-section {
+    background: #87A471;
+    padding-bottom: 70px;
+}
+
+.about h2 {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 63px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: white;
+}
+
+.about-left p {
+    padding: 73px 119px;
+    line-height: 33px;
+}
+
+.about-right img {
+    /* padding: 100px 0; */
+    width: 50%;
+}
+
+/* banner bottom */
+.banner-botom-section {
+    background: #606A64;
+    color: white;
+    padding: 50px 0;
+}
+
+.banner-subtitle h2 {
+    font-size: 64px;
+    color: #E2DAD5;
+    text-shadow: 1px 3px 7px;
+}
+
+.banner-subtitle h3 {
+    font-size: 37px;
+    margin: 26px 0 41px 0;
+}
+
+.banner-subtitle p {
+    margin: 0px 392px;
+    color: #E2DAD5;
+}
+
+.banner-imtam {
+    width: 33%;
+    float: left;
+}
